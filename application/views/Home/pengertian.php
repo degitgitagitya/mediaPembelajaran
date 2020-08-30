@@ -237,37 +237,30 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
+          <div class="row justify-content-center">
+              <div class="col-5">
+                <h3 class="font-weight-bold text-primary text-center">Pengertian & Manfaat Makhorijul Huruf</h3>  
+                <hr>
+              </div>
+          </div>
+
           <div class="row">
 
             <div class="col-xl-12 col-lg-12">
               <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
-                <div class="card-header py-3">
-                  <div class="row">
-                    <div class="col">
-                      <h3 class="m-0 font-weight-bold text-primary">Pengertian & Manfaat Makhorijul Huruf</h3>
-                    </div>
-                    <?php if ($this->session->userdata('level') != 3) { ?>
-                      <div class="col-auto">
-                        <a href="<?php echo site_url('guru/materi') ?>" class="btn btn-sm btn-secondary btn-icon-split">
-                            <span class="icon">
-                                <i class="fa fa-angle-left"></i>
-                            </span>
-                            <span class="text">
-                                Kembali
-                            </span>
-                        </a>
-                      </div>
-                    <?php } ?>
-                  </div>
-                </div>
+                
                 <!-- Card Body -->
                 <div class="card-body text-center">
                   <?php
                     foreach ($listmateri as $materi){
                       if ($materi->nama_materi == 'Pengertian & Manfaat') {
                   ?>
-                    <img style="width: 70%;" class="mb-4" src="<?php echo base_url ('assets/img/materi/pengertian/'.$materi->gambar) ?>">
+                    <div class="row justify-content-center">
+                      <div class="col-4">
+                        <img class="mb-4 img-fluid" src="<?php echo base_url ('assets/img/materi/pengertian/'.$materi->gambar) ?>">
+                      </div>
+                    </div>
                     <p style="font-size: 14pt;" class="text-justify">
                       <?php echo $materi->uraian_materi; ?>
                     </p>

@@ -235,14 +235,17 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
+          <div class="row justify-content-center">
+            <div class="col-5">
+              <h3 class="font-weight-bold text-primary text-center">Selamat datang <?php echo $profile[0]->nama_user; ?></h3>  
+              <hr>
+            </div>
+          </div>
+
           <div class="row">
 
             <div class="col-xl-12 col-lg-12">
               <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3">
-                  <h3 class="m-0 font-weight-bold text-primary">Selamat datang <?php echo $profile[0]->nama_user; ?></h3>
-                </div>
                 <!-- Card Body -->
                 <div class="card-body text-justify" style="font-size: 14pt">
                   <div class="text-center">

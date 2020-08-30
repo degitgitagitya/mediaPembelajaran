@@ -175,6 +175,12 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
+		<div class="row justify-content-center">
+            <div class="col-5">
+              <h3 class="font-weight-bold text-primary text-center"><i>Creative Learning</i></h3>  
+              <hr>
+            </div>
+        </div>
 
           <div class="row">
             <div class="col-xl-12 col-lg-12">

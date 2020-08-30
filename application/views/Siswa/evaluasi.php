@@ -182,10 +182,14 @@
             }
           ?>
 
+          <div class="row justify-content-center">
+              <div class="col-5">
+                <h3 class="font-weight-bold text-primary text-center">Evaluasi</h3>  
+                <hr>
+              </div>
+          </div>
+
           <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h3 class="m-0 font-weight-bold text-primary">Evaluasi</h3>
-            </div>
             <div class="card-body text-justify">
               <?php if ($cek['evaluasi'] == 1){ ?>
                 <div class="text-center">

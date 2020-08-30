@@ -26,16 +26,18 @@
 		      		<div class="card-body p-0">
 				        <!-- Nested Row within Card Body -->
 				        <div class="row">
-							<div class="col-lg-6 d-none d-lg-block">
-								<img src="<?php echo base_url('assets/img/login.jpg') ?>" style="width: 100%; height: 100%">
+							<div class="col-lg-6">
+								<div class="p-5">
+									<div class="text-center">
+										<h1 class="h4 text-gray-900 mb-4">Login</h1>
+									</div>
+									<div class="text-center">
+										<img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 20rem;" src="<?php echo base_url('assets/img/svg/daftar.svg') ?>" alt="">
+									</div>
+								</div>
 							</div>
 							<div class="col-lg-6">
 			            		<div class="p-5">
-			              			<div class="text-center">
-			                			<h1 class="h4 text-gray-900 mb-4">Media Pembelajaran<br>Makhorijul Huruf</h1>
-			                			<p>Silahkan login dengan akun yang sudah terdaftar pada sistem ini</p>
-			                			<p class="text-danger"><?php echo $this->session->flashdata('message'); ?></p>
-			              			</div>
 									<form class="user" method="POST" action="<?php echo site_url('login') ?>">
 										<div class="form-group">
 											<input type="text" autocomplete="off" class="form-control form-control-user" aria-describedby="emailHelp" placeholder="Masukkan Username" name="username" required>
@@ -46,6 +48,7 @@
 											    <span id="show" class="input-group-text bg-white" style="border-radius: 0px 50px 50px 0px;"><i id="eye" class="fas fa-fw fa-eye"></i></span>
 											 </div>
 										</div>
+			                			<p class="text-danger"><?php echo $this->session->flashdata('message'); ?></p>
 										<button class="btn btn-primary btn-user btn-block">Login</button>
 										<a href="#" data-toggle="modal" data-target="#about" class="btn btn-info btn-user btn-block">Tentang</a>
                     					<hr>

@@ -218,29 +218,30 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid mb-5">
+         <div class="row justify-content-center">
+            <div class="col-5">
+              <h3 class="text-center font-weight-bold text-primary">Asy-Syafatain (الشفت)</h3>
+              <hr>
+            </div>
+          </div>
+
 
           <div class="card shadow mb-4">
             <!-- Card Header - Dropdown -->
-            <div class="card-header py-3">
-              <div class="row">
-                <div class="col">
-                  <h3 class="m-0 font-weight-bold text-primary">Asy-Syafatain (الشفت)</h3>
+           
+            <?php if ($this->session->userdata('level') != 3) { ?>
+                <div class="col-auto">
+                  <span id="message" class="text-danger"><?php echo $this->session->flashdata('message'); ?></span>
+                  <a href="<?php echo site_url('guru/materi') ?>" class="btn btn-sm btn-secondary btn-icon-split">
+                      <span class="icon">
+                          <i class="fa fa-angle-left"></i>
+                      </span>
+                      <span class="text">
+                          Kembali
+                      </span>
+                  </a>
                 </div>
-                <?php if ($this->session->userdata('level') != 3) { ?>
-                    <div class="col-auto">
-                      <span id="message" class="text-danger"><?php echo $this->session->flashdata('message'); ?></span>
-                      <a href="<?php echo site_url('guru/materi') ?>" class="btn btn-sm btn-secondary btn-icon-split">
-                          <span class="icon">
-                              <i class="fa fa-angle-left"></i>
-                          </span>
-                          <span class="text">
-                              Kembali
-                          </span>
-                      </a>
-                    </div>
-                  <?php } ?>
-              </div>
-            </div>
+              <?php } ?>
             <!-- Card Body -->
             <div class="card-body" style="font-size: 14pt">
               <?php echo $listmateri[3]->uraian_materi; ?>

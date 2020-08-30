@@ -173,6 +173,12 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
+          <div class="row justify-content-center">
+              <div class="col-5">
+                <h3 class="font-weight-bold text-primary text-center">Tugas</h3>  
+                <hr>
+              </div>
+          </div>
 
           <?php if ($profile[0]->tugas_check == 0) { ?>
           <div class="card shadow mb-4" id="penjelasan">

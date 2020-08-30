@@ -218,14 +218,16 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-5">
+              <h3 class="text-center font-weight-bold text-primary">Al-Jauf (الجوف)</h3>
+              <hr>
+            </div>
+          </div>
 
           <div class="card shadow mb-4">
             <!-- Card Header - Dropdown -->
-            <div class="card-header py-3">
-              <div class="row">
-                <div class="col">
-                  <h3 class="m-0 font-weight-bold text-primary">Al-Jauf (الجوف)</h3>
-                </div>
+            
                 <?php if ($this->session->userdata('level') != 3) { ?>
                     <div class="col-auto">
                       <span id="message" class="text-danger"><?php echo $this->session->flashdata('message'); ?></span>
@@ -239,8 +241,6 @@
                       </a>
                     </div>
                   <?php } ?>
-              </div>
-            </div>
             <!-- Card Body -->
             <div class="card-body" style="font-size: 14pt">
               <?php echo $listmateri[0]->uraian_materi; ?>
